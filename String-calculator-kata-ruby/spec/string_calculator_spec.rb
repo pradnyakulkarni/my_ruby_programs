@@ -6,5 +6,13 @@ describe StringCalculator do
     it "takes an empty string and returns 0" do
       expect(string_calculator.add("")).to eq(0)
     end
+
+    it "takes 1 number" do
+      expect(string_calculator.add("1")).to eq(1)
+    end
+
+    it "takes 2 numbers" do
+      expect(string_calculator.add("1,2")).to eq(3)
+    end
   end
 end  
