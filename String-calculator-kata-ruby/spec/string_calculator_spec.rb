@@ -14,5 +14,11 @@ describe StringCalculator do
     it "takes 2 numbers" do
       expect(string_calculator.add("1,2")).to eq(3)
     end
+
+    it "handles an unknown amount of numbers" do
+      expect(string_calculator.add("1,2,3,4,5")).to eq(15)
+    end
+
+    
   end
 end  
